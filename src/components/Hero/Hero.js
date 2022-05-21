@@ -3,14 +3,14 @@ import {TelegramIcon} from "../../utils/icons";
 
 const Hero = () => {
     return (
-        <div className='container mt-16 flex items-center justify-around md:block sm:block'>
+        <div className='container mt-16 flex items-center justify-around lg:mt-16 lg:flex md:block sm:block sm:m-0'>
             <div>
                 <div className='pb-12'>
                     <span className='text-gray-500'>Главное - </span>
                     <span>Контакты</span>
                 </div>
                 <div className='mt-4'>
-                    <h1 className='text-6xl font-bold text-blue-700'>
+                    <h1 className='text-6xl font-bold text-blue-700 lg:text-6xl sm:text-4xl'>
                         Мы рядом
                     </h1>
                     <p className='max-w-sm mt-4 text-xs'>
@@ -27,7 +27,7 @@ const Hero = () => {
 
                         />
                         <input
-                            className="appearance-none bg-transparent border-b w-xs text-gray-700 mr-3 py-1  leading-tight focus:outline-none"
+                            className="appearance-none bg-transparent border-b w-xs text-gray-700 mr-3 py-1  leading-tight focus:outline-none sm:mt-4"
                             type="text"
                             placeholder='Ваше E-Mail *'
                         />
@@ -41,11 +41,10 @@ const Hero = () => {
                 </div>
                 <div className='mt-4 text-xs flex items-center'>
                     <input type="radio"/>
-                    <span className='pl-1'>Согласен с</span>
-                    <span className=' px-4 text-blue-700'>Политикой конфиденциальности</span>
+                    <p className='px-4'><span className='pl-1  text-blue-700'>Согласен с</span> Политикой конфиденциальности</p>
                 </div>
             </div>
-            <div className="rounded-full w-32 h-32  mx-auto  mt-10 bg-gradient-to-r p-[6px] from-[#388AF3] via-[#A483E2] to-[#A483E2] md:mx-0">
+            <div className="rounded-full w-32 h-32  mx-auto  mt-10 bg-gradient-to-r p-[6px] from-[#388AF3] via-[#A483E2] to-[#A483E2] md:mx-0 sm:mx-0">
                 <div className="flex flex-col justify-center h-full bg-white rounded-full p-4">
                     <div className='pl-4'>
                         <TelegramIcon/>

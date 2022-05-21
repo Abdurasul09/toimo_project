@@ -4,18 +4,18 @@ const Footer = () => {
     return (
         <div className='mt-20'>
             <footer className=" p-4 bg-white sm:p-6 bg-gradient-to-r from-[#388AF3] to-[#A483E2]">
-                <div className='container md:p-1'>
-                    <div className='pb-12'>
+                <div className='md:p-1'>
+                    <div className='pb-12 lg:hidden'>
                         <h1 className='text-white text-4xl font-bold sm:hidden md:block'>toimo</h1>
                     </div>
-                    <div className="md:flex md:justify-between">
-                        <div className="mb-6 md:mb-0 ">
+                    <div className="md:flex md:justify-between ">
+                        <div className="mb-6 md:hidden lg:block">
                             <a href="#" className="flex items-center">
                                 <span
-                                    className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white md:hidden">LOGO</span>
+                                    className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white md:hidden lg:block">LOGO</span>
                             </a>
                         </div>
-                        <div className="grid grid-cols-2 gap-8 sm:gap-8 sm:grid-cols-3 ">
+                        <div className="grid grid-cols-2 gap-8 md:grid-cols-3 sm:gap-6 sm:grid-cols-1">
                             <div>
                                 <div className="flex items-center">
                                     <h2 className="mb-6 text-sm font-semibold text-white uppercase dark:text-white">Услуги</h2>
@@ -33,7 +33,7 @@ const Footer = () => {
                                     </li>
                                 </ul>
                             </div>
-                            <div className='pl-16'>
+                            <div className='pl-16 md:p-0 sm:px-0 sm:py-12'>
                                 <div className="flex items-center">
                                     <h2 className="mb-6 text-sm font-semibold text-white uppercase dark:text-white">Компания</h2>
                                     <div className="bg-white rounded-full h-1 w-1 mb-6 ml-1"/>
@@ -84,11 +84,11 @@ const Footer = () => {
                             </div>
                         </div>
                     </div>
-                    <div className="pt-12 sm:flex sm:items-center sm:justify-between">
+                    <div className="pt-12 md:flex md:md:justify-between sm:block">
                     <span className="text-xs text-white sm:text-center dark:text-white">
                         © Company 2022. All rights reserved.
                     </span>
-                        <div className="flex mt-4 space-x-6 sm:justify-center sm:mt-0">
+                        <div className="flex mt-4 space-x-6  sm:mt-0">
                             <h2 className='text-white text-xs'>
                                 Политика конфиденциальночти
                             </h2>
